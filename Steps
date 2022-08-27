@@ -1,0 +1,23 @@
+# Problem
+How to install PowerCli on Windows
+
+# Answer
+Open PowerShell as Admin, run the command 
+- Install-Module -Name VMware.PowerCLI -Scope CurrentUser -AllowClobber
+
+# Reference
+https://developer.vmware.com/powercli
+https://blogs.vmware.com/PowerCLI/2017/04/powercli-install-process-powershell-gallery.html
+
+# Steps
+
+1. Right Click PowerShell 
+2. Select "Run as Administrator"
+3. Enter command
+  Install-Module -Name VMware.PowerCLI -Scope CurrentUser -AllowClobber
+4. Type Y at the prompt
+  You'll see the Untrusted Repo warning
+  May take a minute to run, so be patient
+5. All Set
+  At this point, you're all set, but you can make sure it was installed by running this command
+  find-module -Name VMware.PowerCLI
